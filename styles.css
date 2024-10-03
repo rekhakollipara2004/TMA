@@ -1,0 +1,107 @@
+:root {
+    --light-bg: #f0f8ff;
+    --light-text: #333;
+    --dark-bg: #1e1e1e;
+    --dark-text: #f0f0f0;
+    --button-bg-light: #5f9ea0;
+    --button-bg-dark: #5f9ea0;
+    --button-hover-light: #0056b3;
+    --button-hover-dark: #007bff;
+}
+
+body {
+    font-family: consolas, sans-serif;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.3s, color 0.3s;
+    background-color: var(--light-bg);
+    color: var(--light-text);
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+}
+
+#task-input {
+    width: calc(100% - 120px);
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    margin-right: 10px; 
+}
+
+button {
+    margin-left: 10px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+button:hover {
+    opacity: 0.9; 
+}
+
+button.add-task {
+    background-color: var(--button-bg-light);
+    color: white;
+}
+
+button.add-task:hover {
+    background-color: var(--button-hover-light);
+}
+
+button.edit-task {
+    background-color: #5f9ea0; 
+    color: white;
+}
+
+button.edit-task:hover {
+    background-color: #e0a800; 
+}
+
+button.complete-task {
+    background-color: #5f9ea0; 
+    color: white;
+}
+
+button.complete-task:hover {
+    background-color: #218838; 
+}
+
+button.delete-task {
+    background-color: #5f9ea0; 
+    color: white;
+}
+
+button.delete-task:hover {
+    background-color: #c82333; 
+}
+
+.progress-bar {
+    width: 100%;
+    background-color: #eee;
+    border-radius: 5px;
+}
+
+#progress-fill {
+    height: 10px;
+    background-color: green;
+    border-radius: 5px;
+    width: 0%;
+}
+
+.dark-mode {
+    background-color: var(--dark-bg);
+    color: var(--dark-text);
+}
+
+.light-mode {
+    background-color: var(--light-bg);
+    color: var(--light-text);
+}
