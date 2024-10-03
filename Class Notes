@@ -1,0 +1,248 @@
+//OPERATORS
+
+// const student = {
+//   name: "brad",
+//   marks: 100,
+// };
+// student.marks = 200;
+// console.log(Object.entries(student));
+
+// console.log(colors)
+// colors.unshift("purple");
+// console.log(colors)
+
+// function greet(nam){
+//     console.log(nam)
+// }
+// greet("brad");
+
+// const greet = function(nan){
+//     console.log(nam)
+// };
+
+// function sum1(a,b){
+//     return a+b;
+// }
+
+// const sum = (a,b) => (a+b);
+// console.log(sum(1,2));
+// console.log(sum1(1,2));
+
+// let num = 10;
+// if (num % 2 == 0) {
+//   console.log("Even");
+// } else {
+//   console.log("Odd");
+// }
+
+// let day = 1;
+
+// switch (day) {
+//   case 0:
+//     console.log("sunday");
+//     break;
+//   case 1:
+//     console.log("monday");
+//     break;
+//   case 2:
+//     console.log("tuesday");
+//     break;
+//   case 3:
+//     console.log("wednesday");
+//     break;
+//   case 4:
+//     console.log("Thursday");
+//     break;
+//   case 5:
+//     console.log("Friday");
+//     break;
+//   case 6:
+//     console.log("saturday");
+//     break;
+//   default:
+//     console.log("Invalid input");
+// }
+
+// for(let i=0;i<5;i++)
+// {
+//     console.log(i);
+// }
+// let a=0;
+// do{
+//     console.log(a);
+//     a++;
+// }while(a<0)
+
+// let a={
+//     names: "brad patt",
+//     age: 24,
+//     branch: "IT",
+// };
+
+//const student={
+// name:"rekha",
+//roll_num:46,
+//gender:"female",
+//marks:500
+//}
+//for(let k in student){
+//   console.log(student[k])
+//}
+//let colors=["red", "blue","green"]
+
+// 1)ecma script is advanced version of the ecma script which was introduced in 2015 -es6.
+//  the latest verssion with "CONST" and slit and , some other words .
+// 2)and another feature called "ARROW FUNCTION" in es6 .
+// ex: function vignan()
+// {}
+// 3) A function without any name is "ANONYMUS FUNCTION" ,which means, no name no access.
+// 4) giving a name is called "FUNCTION EXPRESSION".
+
+//FUNCTION
+
+//console.log(colors.length)
+// let vignan = function(){
+//     console.log("hello")
+// }
+// vignan()
+
+// let hello=()=>{
+//console.log("greetings")
+//}
+//hello()
+
+//function sum(a,b){
+//return a+b
+//}
+//const add=(a,b)=>a+b
+//let result=add(1,20)
+//console.log(result)
+
+// A call back function is a function that is passed as a argument to another function.
+// function hello(a){
+//     a()
+// }
+// function greet(){
+//     console.log("greet")
+// }
+// hello(greet) -> here greet is call back function
+
+// A function which recieves another function as an argument Hierorder.
+// A function is execuuted only when it is called.
+// const data =(back)=>{
+//         back()
+//     }
+//     data(()=>{
+//         alert("backing up")
+//     })
+
+// A function inside an object is called as method
+
+// document.addEventListener("DOMContentLoaded", function()){
+//     var readDocs = document.querySelector(".read-instructions");
+//     readDocs.computedStyleMap.display = "block";
+// }
+
+// Spread operator means spreading the elements used to pass the elements alone
+// (either it is a array or objects)
+
+// let arr1 =[1,2,3,4]
+// function sum(a,b,c,d){
+//     return a+b+c+d
+// }
+// console.log(sum(arr1))
+// let arr2 =[...arr1,5,6]
+// console.log(arr2)
+
+// const data ={
+//     series:7,
+//     color:"red"
+// }
+// const product ={
+//     name:'watch',
+//     type:'electronic'
+// }
+
+// console.log(product)
+
+// let{name,type,brand}=product
+// console.log(brand)
+// console.log(name)
+// console.log(type)
+
+// Rest Operator is used to collect the elements or remaining elements
+// DOM(Dicument Object Model) is used to make websites interactive.
+// DOM is a tree like representation of our HTML document
+
+// TYPES OF NODES
+// -> Element Node
+// -> Attribute Node
+// -> Text Node
+// -> Comment Node
+
+//Text Node properties
+//  element.textcontent
+//  element.innertext
+//  element.innerhtml
+
+//Attribute methods
+//  Element.getattibute("")
+//  Element.settattibute(""),
+//  Element.removeattibute("")
+
+// let ele = document.getElementById("head");
+// ele.innerText="welocme <i>to </i>awt"
+// ele.setAttribute("id", "heading")
+// ele.setAttribute("class","new_class")
+// ele.removeAttribute("id")
+
+//Class list methods
+//  Element.classlist.add("class name")
+//  Element.classlist.remove("class name")
+//  Element.classlist.toggle("class name")
+
+// let value = ele.getAttribute("id");
+// ele.innerHTML=value;
+// ele.classList.add("class1");
+// ele.classList.remove("new_class");
+// ele.classList.toggle("dark");
+
+//Creating Element
+//  let ele = document.createElement("p")
+//  parent.append(new element)
+//  parent.prepend(new element)
+//  parent.insertBefore(new element,reference)
+
+// let element = document.createElement("h3");
+// element.innerHTML="newElement";
+// let parent = document.getElementById("root")
+// parent.append(element)
+// let reference = document.getElementById("ref");
+// parent.insertBefore(element,reference);
+
+// EVENT HANDLERS
+//  ->  Inline EH
+//  ->  Property Based
+//  ->  Modern EH
+// Syntax:addEventListener(typeof Event,call back function)
+
+// Note: when an event occurs the object is created and the details are present in th event object.
+
+//  Mouse :
+//     1.onclick - (changes when the element is clicked)
+//     2.double click
+//     3.mouseover - (when you over on the element)
+//     4.mouseout - (changes when you move away from the element)
+//  Eg: button.addEventListener
+//  Keyboard:
+//     1.key up
+//     2.keydown
+//  Eg:input.EventListener("keyup",()=>{document.body.style.backgroundColor="grey";});
+//  Eg:input.EventListener("keydown",()=>{document.body.style.backgroundColor="pink";});
+//  Form:
+//     1.submit
+//     2.reset
+//     3.focus - (occurs when the event is touched and remained untounched when it is released)
+//     4.blur - (occurs when the event is not focused)
+//  Eg:form.addEventListener("submit",()=> { ele.innerText = "form submitted";});
+//  Eg:form.addEventListener("Reset",()=> { ele.innerText = "form resetted";});
